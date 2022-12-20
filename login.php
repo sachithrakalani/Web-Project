@@ -38,23 +38,23 @@
                 <img src="images/gl.png">
                 <img src="images/tw.png">
             </div>
-            <form action="user_login.php" method="post">
-                <form id="login01" class="input-group">
+            
+                <form id="login01" class="input-group" action="user_login.php" method="post">
                     <input type="text" class="input-field" placeholder="User ID" id="textcolor1" name="User_ID" />
                     <input type="password" class="input-field" placeholder="Enter Password" id="textcolor1" name="Password" />
                     <input type="checkbox" class="chech-box"><span id="spn01">Remember me</span>
                     <button type="submit" class="submit-btn">Log in</button>
                 </form>
-            </form>
-            <form action="user_register.php" method="post">
-                <form id="register01" class="input-group">
+            
+        
+                <form id="register01" class="input-group"  action="user_register.php" method="post">
                     <input type="text" class="input-field" placeholder="User ID" id="textcolor1" name="User_ID_No" / >
                     <input type="email" class="input-field" placeholder="Email ID" id="textcolor1" name ="Email" />
                     <input type="password" class="input-field" placeholder="Enter Password" id="textcolor1"  name= "Password_No" />
                     <input type="checkbox" class="chech-box"><span id="spn01"> I agree to the terms & conditions</span>
                     <button type="submit" class="submit-btn">Register</button>
                 </form>
-            </form>
+        
         </div>
 
     </div>
