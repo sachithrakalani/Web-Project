@@ -74,10 +74,10 @@ if (isset($_POST['btn05'])) {
             <nav id="nav-01">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="login.php">Menu</a></li>
                     <li><a href="">About us</a></li>
-                    <li><a href="">Downloads</a></li>
-                    <li><a href="login.html">Join us</a></li>
+                    <!-- <li><a href="">Downloads</a></li> -->
+                    <li><a href="login.php">Join us</a></li>
 
                 </ul>
 
