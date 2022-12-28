@@ -1,61 +1,6 @@
-<?php
-// connect to database
-//$conn = mysqli_connect('localhost','root','','pizza_store');
-
-//.check .connection
-//if(!$conn){
-// echo 'Connection.error:' . mysqli_connect_error();
-//}
-
-// write query for all pizza categori
-//$sql = 'SELECT * FROM Our_Menu';
-
-//make query & get result
-//$result = mysqli_query($conn, $sql);
-//  echo  $result;
-
-//  // fetch the resulting rows as an arry
-//$pizza_store = mysqli_fetch_all($result, MYSQLI_ASSOC);
-
-//free result from memory
-//mysqli_free_result($result);
-
-// close connection
-//mysqli_close($conn);
-//echo ($pizza_store);
-//  echo '<script>console.log("'$var1 . "\n" . $var2'"); </script>';
-
-
-
-
-
-
-
-
-function goClick()
-{
-    echo 'abd';
-}
-
-
-
-
-if (isset($_POST['btn05'])) {
-    echo "This is Button1 that is selected";
-}
-
-?>
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
+    
 
 <head>
     <meta charset="UTF-8">
@@ -74,12 +19,14 @@ if (isset($_POST['btn05'])) {
             <nav id="nav-01">
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="login.php">Menu</a></li>
+                    <li><a href="menu.php">Menu</a></li>
                     <li><a href="">About us</a></li>
                     <!-- <li><a href="">Downloads</a></li> -->
-                    <li><a href="login.php">Join us</a></li>
+                    <!-- <li><a href="login.php">Join us</a></li> -->
 
                 </ul>
+
+                
 
             </nav>
             <img src="images/menu.png" class="menu-icon" id="menu01" width="20" height="20">
@@ -94,17 +41,20 @@ if (isset($_POST['btn05'])) {
                 <ul class="menu" id="menu02">
 
                     <li class="button active" id="ital">
-                        <a href="#">Other</a>
-                    </li>
-
-
-                    <li class="button " id="chicken">
                         <a href="#">Chicken</a>
                     </li>
 
-                    <li class="button" id="veg">
+                    <li class="button" id="chicken">
                         <a href="#">Cheese</a>
                     </li>
+
+                    <li class="button" id="veg">
+                        <a href="#">Other</a>
+                    </li>
+
+                    <!-- <li class="button active" id="ital">
+                        <a href="#">Other</a>
+                    </li> -->
 
 
                 </ul>
@@ -116,80 +66,82 @@ if (isset($_POST['btn05'])) {
                 <!--chicken-->
 
 
-                <div class="card chicken" id="cardmenu01">
+                <div class="card ital" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
+                        <img src="images/1chi.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 1</h3> -->
-                        <h4>BBQ Chicken Pizza0</h4>
+                        <h4>BBQ Chicken Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';" >Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza05.html';" >Go</a>
                 </div>
 
 
-                <div class="card chicken" id="cardmenu01">
+                <div class="card ital" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
+                        <img src="images/2aca.webp" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 2</h3> -->
                         <h4>Acapulco Chicken Pizza</h4>
                     </div>
-                    <a class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a class="btn" id="btn05" onclick="window.location.href='pizza06.html';">Go</a>
                 </div>
 
 
 
-                <div class="card chicken" id="cardmenu01">
+                <div class="card ital" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
+                        <img src="images/3buff.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 3</h3> -->
                         <h4>Buffolo Chicken Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza07.html';">Go</a>
                 </div>
 
 
-
-                <div class="card chicken" id="cardmenu01">
+                <div class="card ital" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
-                    </div>
-                    <div class="text-desk" id="txdesk">
-                        <!-- <h3>pizza 4</h3> -->
-                        <h4>Chicken Bell pepper Pizza</h4>
-                    </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
-                </div>
-
-
-
-                <div class="card chicken" id="cardmenu01">
-                    <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
-                    </div>
-                    <div class="text-desk" id="txdesk">
-                        <!-- <h3>pizza 5</h3> -->
-                        <h4>Spicy Chicken Pizza</h4>
-                    </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
-                </div>
-
-
-
-                <div class="card chicken" id="cardmenu01">
-                    <div class="img" id="crdimg">
-                        <img src="images/4.jpg" alt="">
+                        <img src="images/6thai.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 6</h3> -->
                         <h4>Thai Chicken Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza10.html';">Go</a>
                 </div>
+
+                
+                <div class="card ital" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/5spi.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 5</h3> -->
+                        <h4>Spicy Chicken Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza09.html';">Go</a>
+                </div>
+
+
+                <div class="card ital" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/4bell.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 4</h3> -->
+                        <h4>Chicken Bell pepper Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza08.html';">Go</a>
+                </div>
+
+
+
+
+                
 
 
 
@@ -234,74 +186,75 @@ if (isset($_POST['btn05'])) {
                 <!-- Cheese -->
 
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/11che.webp" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 11</h3> -->
                         <h4>Cheese Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza11.html';">Go</a>
                 </div>
 
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/12cheebu.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 12</h3> -->
                         <h4>Cheeseburger Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza12.html';">Go</a>
                 </div>
 
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/13chepo.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 13</h3> -->
                         <h4>Cheese and papperoni Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza13.html';">Go</a>
                 </div>
 
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/14chebr.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 14</h3> -->
                         <h4>Cheese Bread Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza14.html';">Go</a>
                 </div>
 
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/15ch.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 15</h3> -->
                         <h4>Cheesy Pepper Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza15.html';">Go</a>
                 </div>
 
-                <div class="card veg" id="cardmenu01">
+                <div class="card chicken" id="cardmenu01">
+                
                     <div class="img" id="crdimg">
-                        <img src="images/5.jpg" alt="">
+                        <img src="images/16Cherry.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 16</h3> -->
                         <h4>Cherry Cheese Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza16.html';">Go</a>
                 </div>
 
                 <!-- <div class="card veg" id="cardmenu01">
@@ -318,72 +271,103 @@ if (isset($_POST['btn05'])) {
                 <!-- Other -->
 
 
-                <div class="card ital" id="cardmenu01">
+                <div class="card veg" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
-                    </div>
-                    <div class="text-desk" id="txdesk">
-                        <!-- <h3>pizza 21</h3> -->
-                        <h4>Apple Pizza Dessert</h4>
-                    </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
-                </div>
-
-                <div class="card ital" id="cardmenu01">
-                    <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
-                    </div>
-                    <div class="text-desk" id="txdesk">
-                        <!-- <h3>pizza 22</h3> -->
-                        <h4>Apple Pie Pizza</h4>
-                    </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
-                </div>
-
-                <div class="card ital" id="cardmenu01">
-                    <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
+                        <img src="images/23seaf.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 23</h3> -->
                         <h4>Seafood Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza23.html';">Go</a>
                 </div>
 
-                <div class="card ital" id="cardmenu01">
+
+                <div class="card veg" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
+                        <img src="images/21apple.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
-                        <!-- <h3>pizza 24</h3> -->
-                        <h4>Mixed Berry Pizza</h4>
+                        <!-- <h3>pizza 21</h3> -->
+                        <h4>Apple Pizza Dessert</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza21.html';">Go</a>
                 </div>
 
-                <div class="card ital" id="cardmenu01">
+
+                <div class="card veg" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
+                        <img src="images/26triple.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 26</h3> --> 
+                        <h4>Thriple Berry Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza26.html';">Go</a>
+                </div>
+                
+                
+                <div class="card veg" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/25cann.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 25</h3> -->
                         <h4>Cannoli Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza25.html';">Go</a>
+                </div>
+
+                
+
+                <!-- <div class="card veg" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/23seaf.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 23</h3> -->
+                        <!-- <h4>Seafood Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza23.html';">Go</a>
+                </div> --> -->
+
+                <div class="card veg" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/24mix.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 24</h3> -->
+                        <h4>Mixed Berry Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza24.html';">Go</a>
                 </div>
 
 
-                <div class="card ital" id="cardmenu01">
+
+                <div class="card veg" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/6.jpg" alt="">
+                        <img src="images/22apie.jpg" alt="">
+                    </div>
+                    <div class="text-desk" id="txdesk">
+                        <!-- <h3>pizza 22</h3> -->
+                        <h4>Apple Pie Pizza</h4>
+                    </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza22.html';">Go</a>
+                </div>
+
+                
+
+
+                <!-- <div class="card veg" id="cardmenu01">
+                    <div class="img" id="crdimg">
+                        <img src="images/26triple.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 26</h3> -->
-                        <h4>Thriple Berry Pizza</h4>
+                        <!-- <h4>Thriple Berry Pizza</h4>
                     </div>
-                    <a href="#" class="btn" id="btn05" onclick="window.location.href='login.php';">Go</a>
-                </div>
+                    <a href="#" class="btn" id="btn05" onclick="window.location.href='pizza26.html';">Go</a>
+                </div> --> -->
 
             </div>
 

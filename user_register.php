@@ -16,7 +16,9 @@ if($conn->connect_error){
     values(?,?,?)");
     $stmt->bind_param("isi", $User_Name, $User_Email, $Password_No);
     $stmt->execute();
-    echo "Welcome our Web Page ";
+    // echo "Welcome our Web Page ";
+    header('Location: menu.php');
+
     $stmt->close();
     $conn->close();
 }

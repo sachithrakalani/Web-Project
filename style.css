@@ -39,6 +39,9 @@ background-color: #000;
 
 .logo01 {
     cursor: pointer;
+    width: 125px;
+    height: 125px;
+    /* border: red 5px solid; */
 }
 
 

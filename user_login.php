@@ -12,7 +12,7 @@ if (!$conn) {
 }
 
 // write query for all pizza categori
-$sql = "SELECT * FROM User where User_ID=$user_Name";
+$sql = "SELECT * FROM User where User_ID = $user_Name";
 
 // make query & get result
 $result = mysqli_query($conn, $sql);
@@ -25,14 +25,24 @@ mysqli_free_result($result);
 
 
 if (count($users) == 0) {
-    echo "Places Register our web page";
+            echo '<script type="text/javascript">';
+            echo 'if(confirm("Places Register our web page. Do you want to continue?")) {
+                window.location.href = "login.php"
+            }'; 
+            echo '</script>';
 }
 if (count($users) > 0) {
     $user = $users[0];
     if ($user['Password'] == $password_No) {
-        echo "Loing our web page";
+        // echo "Loing our web page";
+        header('Location: menu.php');
+            
     } else {
-        echo "Your Password is incorrect";
+            echo '<script type="text/javascript">';
+            echo 'if(confirm("Your Password is incorrect. Do you want to continue?")) {
+                window.location.href = "login.php"
+            }'; 
+            echo '</script>';
     }
 }
 
