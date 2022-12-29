@@ -105,7 +105,7 @@
 
                 <div class="card ital" id="cardmenu01">
                     <div class="img" id="crdimg">
-                        <img src="images/6thai.jpg" alt="">
+                        <img src="images/6Thai.jpg" alt="">
                     </div>
                     <div class="text-desk" id="txdesk">
                         <!-- <h3>pizza 6</h3> -->
