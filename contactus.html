@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>contact us</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
-
     <div class="container01" id="container01">
         <div class="navbar01">
             <img src="images/2.png" class="logo01" width="100" height="100">
@@ -30,42 +30,23 @@
         </div>
 
 
-
-        <div class="content" id="pizza01">
-
-            <h1>Cheese Bread Pizza</h1> <br>
-
-            <p>
-                <img src="images/14chebr.jpg" height="400" width="600" id="hmpza01">
-            </p>
-
-            <h3>Ingredients</h3>
-            <p>
-            <ol>
-                <li>Cheese bread</li>
-                <li>Kitchen kettle chili sauce</li>
-                <li>Grated sharp cheddar cheese</li>
-
-
-            </ol>
-            </p>
-
-            <h3>Procedure</h3>
-
-            <p>
-            <ul>
-                <li>
-                STEP 1<br>    
-                Slice cheese bread 1/2 inch thick. Cut slices in half crosswise.
-                2 Spread each bread piece with 1 tablespoon Kitchen Kettle chili sauce and 
-                sprinkle with 1 tablespoon grated sharp Cheddar cheese.
-                </li><br><br>
-            </ul>
-            </p>
-
+        <div class="form-box" id="contactbox">
+            <h1>Contact Us</h1>
+            <form action="contactus.php" method="POST">
+                <label for="name"> Name :</label>
+                <input type="text" name="name" id="name">
+                <label for="email"> Email :</label>
+                <input type="email" name="email" id="email">
+                <label for="subject"> Subject :</label>
+                <input type="text" name="subject" id="subject">
+                <label for="message"> Message :</label>
+                <textarea name="message" cols="20" rows="7"></textarea>
+                <input type="submit" value="send">
+            </form>
         </div>
-
     </div>
+
+
 
 </body>
 

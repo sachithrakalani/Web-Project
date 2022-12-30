@@ -33,10 +33,13 @@
             <img src="images/2.png" class="logo01" width="100" height="100">
             <nav id="nav-01">
                 <ul>
-                    <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
+                    <li><a href="more.html">More</a></li>
                     <li><a href="login.php">Menu</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
                     <li><a href="about us.html">About us</a></li>
                     <!-- <li><a href="login.php">Join us</a></li> -->
+                    <li><a href="contactus.html">Contact us</a></li>
 
                 </ul>
             </nav>
@@ -58,7 +61,7 @@
 
             <form id="login01" class="input-group" action="user_login.php" method="post">
                 <input type="text" class="input-field" placeholder="User ID" id="textcolor1" name="User_ID" />
-                <input type="password" class="input-field" placeholder="Enter Password" id="textcolor1"
+                <input type="password" class="input-field" placeholder="Enter Pin" id="textcolor1"
                     name="Password" />
                 <input type="checkbox" class="chech-box"><span id="spn01">Remember me</span>
                 <button type="submit" class="submit-btn">Log in</button>
@@ -68,7 +71,7 @@
             <form id="register01" class="input-group" action="user_register.php" method="post">
                 <input type="text" class="input-field" placeholder="User ID" id="textcolor1" name="User_ID_No" />
                 <input type="email" class="input-field" placeholder="Email ID" id="textcolor1" name="Email" />
-                <input type="password" class="input-field" placeholder="Enter Password" id="textcolor1"
+                <input type="password" class="input-field" placeholder="Enter Pin" id="textcolor1"
                     name="Password_No" />
                 <input type="checkbox" class="chech-box"><span id="spn01"> I agree to the terms & conditions</span>
                 <button type="submit" class="submit-btn">Register</button>

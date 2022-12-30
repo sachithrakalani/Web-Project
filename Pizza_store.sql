@@ -1,3 +1,8 @@
+sql110.epizy.com', 'epiz_33287063', 'lJUIps2jfnHLcN', 'epiz_33287063_pizza_store
+
+
+
+
 Create database Pizza_store;
 
 Use Pizza_store;

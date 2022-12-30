@@ -19,11 +19,13 @@
             <nav id="nav-01">
                 <ul>
                     <li><a href="index.html">Home</a></li>
+                    <li><a href="more.html">More</a></li>
                     <li><a href="menu.php">Menu</a></li>
+                    <li><a href="downloads.html">Downloads</a></li>
                     <li><a href="">About us</a></li>
                     <!-- <li><a href="">Downloads</a></li> -->
                     <!-- <li><a href="login.php">Join us</a></li> -->
-
+                    <li><a href="contactus.html">Contact us</a></li>
                 </ul>
 
                 
