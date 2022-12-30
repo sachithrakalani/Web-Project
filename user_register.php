@@ -8,7 +8,7 @@ $Password_No = $_POST['Password_No'];
 //  echo $Password_No;
 
 //database connection
-$conn = new mysqli('localhost','root','','pizza_store');
+$conn = new mysqli('sql110.epizy.com', 'epiz_33287063', 'lJUIps2jfnHLcN', 'epiz_33287063_pizza_store');
 if($conn->connect_error){
     die('connection Faild : '.$conn->connect_error);
 }else{
