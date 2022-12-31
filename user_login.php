@@ -4,7 +4,7 @@ $user_Name = $_POST['User_ID'];
 $password_No = $_POST['Password'];
 
 // connect to database
-$conn = mysqli_connect('localhost','root','','pizza_store');
+$conn = mysqli_connect('sql110.epizy.com','epiz_33287063','lJUIps2jfnHLcN','epiz_33287063_pizza_store');
 
 //.check .connection
 if (!$conn) {
